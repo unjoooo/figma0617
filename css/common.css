@@ -12,11 +12,71 @@ body{
     font-family: var(--fontfamily)
     font-size: 1.125rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 130%; /* 1.4625rem */
     letter-spacing: -0.01125rem;
 }
 a{
     color: var(--basecolor);
     text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body, ul, p, div{
+    margin: 0;
+    padding: 0;
+}
+/*공통클래스*/
+.title{
+    color: #111;
+    font-size: 2.25rem;
+}
+.linkcss{
+font-size: 1.125rem;
+}
+.activeColor{
+    color : var(--activecolor)
+}
+.pointColor{
+    color : var(--pointcolor)
+}
+.activeColorBg{
+    background-color : var(--activecolor)
+}
+
+.container{
+    display: flex; /* 내 자식의 레이아웃*/
+    width: 90rem;
+    margin: 0 auto;
+    /*height: 9.3125rem; */
+    align-items: center;
+    gap: 1.875rem;
+    flex-shrink: 0;
+}
+.search{
+    width: 30rem;
+    height: 3.5rem;
+    flex-shrink: 0;
+}
+.search input{
+    display: block;
+    width: 30rem;
+    height: 3.18rem;
+    border-radius: 1.875rem;
+    border: 2px solid var(--pointcolor);
+    background: #FFF;
+}
+.utilmenu{
+    width: 46.125rem;
+    height: 2.125rem;
+    flex-shrink: 0;
+}
+.utilmenu ul{
+    display: flex;
+    width: 46.125rem;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.875rem;
+    flex-shrink: 0;
 }
