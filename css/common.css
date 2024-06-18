@@ -80,3 +80,20 @@ font-size: 1.125rem;
     gap: 1.875rem;
     flex-shrink: 0;
 }
+
+/* 클래스가 utilmenu인 태그 li태그중에서
+클래스가 m인 거 찾아
+찾았으면 그 안의 두번째 img태그 나타나지마 */
+div.utilmenu li.m img:nth-child(2){
+    display:none
+}
+.utilmenu li.m:hover img:nth-child(2){
+    display:block
+}
+.utilmenu li.m:hover img:nth-child(1){
+    display:none
+}
+
+.cs svg:hover path{
+    fill:red;
+}
