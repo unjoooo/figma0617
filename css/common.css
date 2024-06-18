@@ -75,8 +75,8 @@ font-size: 1.125rem;
 .utilmenu ul{
     display: flex;
     width: 46.125rem;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: flex-end; /*x축*/
+    align-items: center; /*y축*/
     gap: 1.875rem;
     flex-shrink: 0;
 }
@@ -96,4 +96,25 @@ div.utilmenu li.m img:nth-child(2){
 
 .cs svg:hover path{
     fill:red;
+}
+
+/* .cart svg path{
+    fill:red;
+    transition: 0.5s;
+}
+.cart svg:hover path{
+    fill:blue;
+} */
+
+.cart{
+    background-color: red;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.cart path{
+    fill: white;
+}
+.cart:hover{
+    background-color: #111
 }
